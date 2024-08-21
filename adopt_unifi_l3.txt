@@ -1,0 +1,6 @@
+Reset UNIFI :
+sudo syswrapper.sh restore-default & set-default &
+
+Adopt L3 Unifi SSH :
+set-inform http://ipcontroller:8080/inform
+
