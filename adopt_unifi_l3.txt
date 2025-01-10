@@ -1,5 +1,16 @@
-Reset UNIFI :
+#Reset UNIFI :
 sudo syswrapper.sh restore-default & set-default &
 
-Adopt L3 Unifi SSH :
+#Adopt L3 Unifi SSH :
 set-inform http://ipcontroller:8080/inform
+
+#Upgrade firmware UNIFI :
+==== buka browser (chrome, firefox, edge, safari) ====
+1. buka https://www.ui.com/download/unifi
+2. cari tipe unifi yang mau diupgrade
+3. klik kanan pada download - copy link address
+==== buka mikrotik ====
+5. telnet, ssh ke unifi melalui mikrotik
+6. masukkan username dan password
+7. upgrade paste link yang sudah dicopy
+upgrade https://dl.ui.com/unifi/firmware/U7PG2/6.6.77.15402/BZ.qca956x_6.6.77+15402.240813.0934.bin
