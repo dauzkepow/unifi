@@ -16,6 +16,10 @@ set-inform http://ipcontroller:8080/inform
 upgrade https://dl.ui.com/unifi/firmware/U7PG2/6.6.77.15402/BZ.qca956x_6.6.77+15402.240813.0934.bin
 
 #Upgrade manual unifi UAP-LR 2.4 :
+==== Buka browser + download ====
+https://community.ui.com/releases/UAP-Firmware-4-3-28/a02af414-6665-4c57-ac03-6e4dac8317e1
+ubah nama file = fwupdate_4.3.28.bin
+
 ==== BUKA WINSCP ====
 file protocol = SCP
 Hostname = ip_unifi
