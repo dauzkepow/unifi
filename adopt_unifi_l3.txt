@@ -14,3 +14,27 @@ set-inform http://ipcontroller:8080/inform
 6. masukkan username dan password
 7. upgrade paste link yang sudah dicopy
 upgrade https://dl.ui.com/unifi/firmware/U7PG2/6.6.77.15402/BZ.qca956x_6.6.77+15402.240813.0934.bin
+
+#Upgrade manual unifi UAP-LR 2.4 :
+==== BUKA WINSCP ====
+file protocol = SCP
+Hostname = ip_unifi
+Port Number = 22
+Username = ubnt
+Password = ubnt
+LOGIN
+pilih yes
+klik back sampai folder /
+masuk folder /tmp
+copy fwupdate_4.3.28.bin dari windows ke /tmp unifi
+
+==== BUKA PUTTY : ====
+masukkan ip_unifi, port biarkan 22, OPEN
+cd /tmp 
+chmod +x fwupdate_4.3.28.bin
+ls -la (pastikan sudah rwx dan warna hijau)
+syswrapper.sh upgrade2 & 
+
+lalu tekan enter ,dan tunggu proses selesai 
+
+
