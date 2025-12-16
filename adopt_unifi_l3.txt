@@ -42,3 +42,11 @@ syswrapper.sh upgrade2 &
 lalu tekan enter ,dan tunggu proses selesai 
 
 
+
+#cara adopt UNIFI6 sampai 7 terbaru :
+pastikan UNIFI Controller versi 10 atau terbaru
+
+==== Buka CMD Laptop ====
+pastikan laptop dan unifi sudah dapat ip dhcp dari mikrotik
+ssh -oHostKeyAlgorithms=+ssh-rsa ubnt@ip_address_unifi
+
